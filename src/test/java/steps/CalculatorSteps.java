@@ -1,6 +1,8 @@
 package steps;
 
 import com.eurotechstudy.Calculator;
+import io.cucumber.java.PendingException;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -30,4 +32,21 @@ public class CalculatorSteps {
     public void iMultiplyAnd(double num1, double num2) {
         factResult = calculator.multiply(num1, num2);
     }
+
+    @And("print string {string}")
+    public void printString(String value) {
+
+        System.out.println(value);
+
+    }
+
+
+    @When("from {int} I substract {int}")
+    public void fromISubstract(int num1, int num2) {
+
+        factResult = calculator.subtract(num1, num2);
+
+    }
+
+
 }
