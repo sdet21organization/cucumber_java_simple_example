@@ -16,7 +16,9 @@ import org.junit.runner.RunWith;
 
                 "json:target/cucumber-reports/cucumber.json",
 
-                "junit:target/cucumber-reports/cucumber.xml"
+                "junit:target/cucumber-reports/cucumber.xml",
+
+                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
 
         }
 )
